@@ -15,7 +15,6 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     height: 100%;
-    padding: 0rem 5rem;
   }
   a, button {
     text-decoration: none;
@@ -49,6 +48,8 @@ const GlobalStyles = createGlobalStyle`
   p {
     ${theme('fontStyle.body1')}
   }
+
+  
 `;
 
 export default GlobalStyles;

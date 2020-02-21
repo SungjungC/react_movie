@@ -12,7 +12,9 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.16.4",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "styled-components": "^5.0.1",
+    "styled-tools": "^1.7.1"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"
