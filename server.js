@@ -24,16 +24,18 @@ console.log(NAVER_API_ID,NAVER_API_SECRET )
 
 app.get(`/movie`, async ({ query }, res) => {
 
+
     await axios("https://openapi.naver.com/v1/search/movie.json", {
         params: query,
         headers: {
             "X-Naver-Client-Id": NAVER_API_ID,
-            "X-Naver-Client-Secret": NAVER_API_SECRET
+            "X-Naver-Client-Secret": NAVER_API_SECRET,
+            Accept: "application/json"
         }
       }).then(
          result => {
-             console.log(result);
-             res.send(result);
+             console.log("server",result.data);
+             res.send(result.data);
          
          }
          
