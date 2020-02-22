@@ -8,11 +8,9 @@ const Result = ({ list }) => {
   if (list)
     return (
       <Style.Container>
-        <Style.Content>
-          {list.map((li, index) => {
-            return <MovieCard data={li} key={index} />;
-          })}
-        </Style.Content>
+        {list.map((li, index) => {
+          return <MovieCard data={li} key={index} />;
+        })}
       </Style.Container>
     );
   else return <></>;
